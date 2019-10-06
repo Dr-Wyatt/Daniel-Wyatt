@@ -765,7 +765,7 @@ ul.contact li a.icon-rss:before
 
 .column5
 {
-	display: inline-block;
+	float: left;
 }
 
 #slider-wrapper
@@ -987,6 +987,7 @@ ul.contact li a.icon-rss:before
 
 .extra2  .ebox1
 {
+	
 }
 
 .extra2 .ebox2
