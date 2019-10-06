@@ -89,8 +89,11 @@ a:hover
 
 .image-centered
 {
-	display: block;
-	margin: 0 0 2em 0;
+	display: inline-block;
+	margin:0 auto;
+	height: 300px;
+	width: 230px;
+	border-radius: 50%;
 }
 
 .image-centered img
@@ -317,7 +320,42 @@ ul.contact li a.icon-rss:before
 	text-transform: uppercase;
 	font-weight: 600;
 	color: #FFF;
+	cursor: pointer;
 }
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+	position: relative;
+	display: inline-block;
+  }
+  
+  /* Dropdown Content (Hidden by Default) */
+  .dropdown-content {
+	display: none;
+	position: absolute;
+	background-color: #f1f1f1;
+	width: 100%;
+	/* min-width: 147px; */
+	/* box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2); */
+	z-index: 1;
+  }
+  
+  /* Links inside the dropdown */
+  .dropdown-content a {
+	color: black;
+	padding: 12px 16px;
+	text-decoration: none;
+	display: block;
+  }
+  
+  /* Change color of dropdown links on hover */
+  .dropdown-content a:hover {background-color: #ddd;}
+  
+  /* Show the dropdown menu on hover */
+  .dropdown:hover .dropdown-content {display: block;}
+  
+  /* Change the background color of the dropdown button when the dropdown content is shown */
+  .dropdown:hover .dropbtn {background-color: #3e8e41;}
 
 .button:hover
 {
@@ -390,14 +428,14 @@ ul.contact li a.icon-rss:before
 
 	#logo
 	{
-		padding: 5em 0em;
+		padding: 0em 0em;
 		text-align: center;
 		vertical-align: middle;
 	}
 	
 	#logo h1
 	{
-		font-size: 3.5em;
+		font-size: 3.0em;
 	}
 	
 	#logo a
@@ -444,7 +482,7 @@ ul.contact li a.icon-rss:before
 	#menu ul
 	{
 		text-align: center;
-		margin-left: 3.0em;
+		margin-left: 2.0em;
 	}
 	
 	#menu li
@@ -706,13 +744,14 @@ ul.contact li a.icon-rss:before
 
 .column1,  .column2,  .column3,  .column4
 {
-	width: 282px;
+	width: 400px;
+	/* display: inline-block; */
 }
 
 .column1,  .column2
 {
 	float: left;
-	margin-right: 24px;
+	/* margin-right: 24px; */
 }
 
 .column3
@@ -734,11 +773,16 @@ ul.contact li a.icon-rss:before
 		background-size: cover;
 	}
 
+.column5
+{
+	display: inline-block;
+}
 
 #slider-wrapper
 {
 	padding: 6em 0em;
 	background: #DB3256;
+
 }
 
 #slider
